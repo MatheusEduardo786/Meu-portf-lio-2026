@@ -1,7 +1,6 @@
 # 🚀 Meu Portfólio de Projetos
 
 <p align="center">
-  <img src="img/matheus.png" alt="Matheus Eduardo" width="150">
   <img src="img/matheusPng.png" alt="Foto do Matheus Eduardo" width="150>
 </p>
 
