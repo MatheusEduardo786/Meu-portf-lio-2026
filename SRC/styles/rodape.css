@@ -1,0 +1,27 @@
+/* Estilos do rodapé */
+
+footer {
+    background-color: var(--cor-primaria);
+    padding: 40px 0;
+}
+/* container */
+
+footer > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* texto */
+
+.produzidoMatheus {
+    color: var(--cor-texto);
+    font-size: 14px;
+}
+
+footer .produzidoMatheus img{
+    max-width: 200px;
+    margin: 16px 0;
+}

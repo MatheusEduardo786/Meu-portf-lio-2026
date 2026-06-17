@@ -1,0 +1,105 @@
+/* Estilo do formulário de contato */
+
+section.contato {
+    padding: 80px 0;
+    background-color: var(--corAzul);
+}
+
+.contato > .interface {
+    background-color: var(--cor-braco);
+    border-bottom: none;
+    border-left: 2px solid transparent;
+    border-left-color: var(--cor-destaque);
+    box-shadow: var(--box--boxShadow);
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* texto lateral */
+
+.texto-contato {
+    width: 40%;
+}
+
+.texto-contato p {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0;
+
+}
+
+.texto-contato i {
+    color: var(--cor-destaque);
+    font-size: 2rem;
+}
+
+/* formulário */
+
+.contato form {
+    width: 50%;
+}
+
+/* inputs */
+
+.contato form input,
+.contato form textarea {
+    width: 100%;
+    padding: 16px 10px;
+    background: transparent;
+    border: 2px solid var(--cor-destaque);
+    outline: none;
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+}
+
+/* linha dupla */
+
+.contato form .tel-proj {
+    display: flex;
+    gap: 12px;
+
+}
+
+/* textarea */
+
+.contato form textarea {
+    resize: none;
+}
+
+.contato form input:focus,
+.contato form textarea:focus {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 8px var(--cor-destaque);
+    background: transparent;
+    color: var(--cor-texto);
+}
+
+.contato form input::placeholder,
+.contato form textarea::placeholder {
+    color: var(--cor-texto);
+    opacity: 0.7;
+}
+
+@media (max-width: 768px){
+
+    .contato > .interface{
+        flex-direction: column;
+    }
+
+    .texto-contato,
+    .contato form{
+        width: 100%;
+    }
+
+    .contato form .tel-proj{
+        flex-direction: column;
+    }
+}
