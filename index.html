@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="SRC/styles/meusProjetos.css" />
     <link rel="stylesheet" href="SRC/styles/contato.css" />
     <link rel="stylesheet" href="SRC/styles/rodape.css">
+
+    <!-- <link rel="icon" href="img/Matheus-potfolio.png" type="image/png" /> -->
     
     <title>Meu portfólio</title>
   </head>
@@ -83,7 +85,7 @@
         tutoriais e conteúdos sobre animação e modelagem 3D voltados à
         comunidade Minecraft, utilizando ferramentas como Mine-Imator,
         Modelbench e Blockbench. Este trabalho demonstra minha criatividade,
-        autonomia e capacidade de ensinar tecnologia de forma prática.
+        autonomia e capacidade de forma prática.
       </p>
 
       <p>
@@ -95,7 +97,7 @@
       <p>
         Concluí o Ensino Médio com formação técnica em Tecnologia e Robótica
         pela Alura e continuo evoluindo constantemente por meio de cursos,
-        projetos autorais e estudos práticos. Tenho grande interesse em
+        projetos próprios e estudos práticos. Tenho grande interesse em
         desenvolvimento web, criação de jogos e animação digital.
       </p>
 
@@ -253,7 +255,7 @@
           <img src="img/modelagem logo.png" alt="Modelagem 3D">
           <h2>Modelagem <samp>3D</samp></h2>
         </div>
-        <p>Modelagem de personagens e objetos Minecraft utilizando Modelbench e Blockbench.</p>
+        <p>Modelagem de personagens e objetos no estilo de Minecraft utilizando Modelbench, Blockbench ou Blender.</p>
       </div>
 
       <div class="box-skills">
@@ -262,7 +264,7 @@
           <img src="img/edição de video logo.png" alt="Edição de vídeo">
           <h2>Edição de <samp>Vídeo</samp></h2>
         </div>
-        <p>Edição de vídeos para YouTube utilizando Shotcut com foco em animações e tutoriais.</p>
+        <p>Edição de vídeos para YouTube utilizando Shotcut.</p>
       </div>
 
       <div class="box-skills">
@@ -271,7 +273,7 @@
           <img src="img/criador conteúdo logo2.png" alt="Criador de conteúdo">
           <h2>Criador de <samp>conteúdo</samp></h2>
         </div>
-        <p>Produção de conteúdo sobre animação e modelagem para a comunidade Minecraft.</p>
+        <p>Produção de conteúdo de e sobre animação e modelagem para a comunidade Minecraft.</p>
       </div>
 
       <div class="box-skills">
@@ -280,7 +282,7 @@
           <img src="img/MineImatorLogo.png" alt="Animação Minecraft">
           <h2>Animação <samp>3D</samp></h2>
         </div>
-        <p>Criação de animações utilizando Mine-Imator aplicadas em trailers e projetos autorais.</p>
+        <p>Criação de animações utilizando Mine-Imator aplicadas em projetos próprios.</p>
       </div>
 
     </article>
@@ -557,27 +559,29 @@ Clique (ou toque) em uma peça que esteja ao lado do espaço vazio. A peça desl
            <p><i class="bi bi-discord"></i> Meu Discord: Matheus Eduardo. AnimacaoCraft</p>
           </div>
 
-          <form action="#">
+          <form id="contact-form">
             
-              <label for="name" class="form-label"></label>
-              <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+              
+              <input type="text" class="form-control" id="name" name="name"placeholder="Digite seu nome">
             
             
-              <label for="email" class="form-label"></label>
-              <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+              
+              <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
             
             <div class="tel-proj">
-              <label for="whatsapp" class="form-label"></label>
-              <input type="tel" class="form-control" id="whatsapp" placeholder="Digite seu WhatsApp">
-              <label for="subject" class="form-label"></label>
-              <input type="text" class="form-control" id="subject" placeholder="Digite o assunto">
+              
+              <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="Digite seu WhatsApp">
+
+              
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Digite o assunto">
             </div>
             
-              <label for="message" class="form-label"></label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Fala sobre a sua ideia"></textarea>
-            
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Fale sobre a sua ideia" required></textarea>
+
             <div class="btn-enviar">
-              <button button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">
+                Enviar
+              </button>
             </div>
           </form>
         </div>
@@ -587,7 +591,7 @@ Clique (ou toque) em uma peça que esteja ao lado do espaço vazio. A peça desl
     </main>
 
 
-    <footer class="py-5">
+    <footer class="rodape py-5">
 
   <div class="interface footer-container">
 
@@ -626,11 +630,23 @@ Clique (ou toque) em uma peça que esteja ao lado do espaço vazio. A peça desl
 
 </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+    emailjs.init("anRVpx30tHwMXjDHx");
+    </script>
+
+    <!-- JS do Swiper e Bootstrap -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+
+    <script src="javaScript.js"></script>
+
   </body>
 </html>
