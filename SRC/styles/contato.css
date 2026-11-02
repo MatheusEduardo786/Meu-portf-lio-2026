@@ -8,14 +8,16 @@ section.contato {
 .contato > .interface {
     background-color: var(--cor-braco);
     border-bottom: none;
-    border-left: 2px solid transparent;
+    border-left: 4px solid var(--cor-destaque);
     border-left-color: var(--cor-destaque);
     box-shadow: var(--box--boxShadow);
-    padding-bottom: 1em;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
+    padding-bottom: 1em;
+    border-radius: 20px;
+    padding: 40px;
 }
 
 /* texto lateral */
